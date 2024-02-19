@@ -106,7 +106,5 @@ while True:
     
     else:
         print("Please enter a right command: ")
-    
-lib.__del__()    
 
     
