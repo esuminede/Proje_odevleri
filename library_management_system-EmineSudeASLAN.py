@@ -61,6 +61,8 @@ class Library:
             pages.append(split_word[3])
 
         book = input("Enter the book's title you want to remove from file: ")
+        book = book.lower()
+        book = book.capitalize()
         file.close()
 
         count = 0
@@ -82,7 +84,8 @@ class Library:
             for j in range(len(line)-1):
                 file.write(f"{titles[j]}, {authors[j]}, {releasedDates[j]}, {pages[j]}\n")
                 file.flush()
-
+        else: 
+            print(f"There is no such a book named '{book}'.\n
     
  #-----------------------------------------------------------------------------------
     
